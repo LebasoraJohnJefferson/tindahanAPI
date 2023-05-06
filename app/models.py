@@ -11,7 +11,6 @@ class User(Base):
     password = Column(String,nullable=False)
     full_name = Column(String,nullable=False)
     address = Column(String,nullable=False)
-    birth_day = Column(TIMESTAMP(),nullable=False)
     gender = Column(String,nullable=False)
     image = Column(String,nullable=True)
     create_at = Column(TIMESTAMP(timezone=True),nullable=False,server_default=text('now()'))
